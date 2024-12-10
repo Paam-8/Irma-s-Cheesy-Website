@@ -72,9 +72,15 @@ h3{
 
 h3{
     color: aliceblue;
+    padding-top: 1rem;
 }
 
 a{
     color: rgb(5, 88, 34);
     color: rgb(13, 172, 69);
+    text-decoration: none;
+}
+
+span{
+    text-align: center;
 }
