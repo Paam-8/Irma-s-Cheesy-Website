@@ -55,8 +55,8 @@ header form input:focus{
 }
 
 header form button{
-    border: 1px black;
-    background-color: rgb(123, 3, 35);
+    border: 0.5px solid white;
+    background-color: rgba(255, 255, 255, 0);
     color: aliceblue;
     border-radius: 0 100vw 100vw 0;
     padding: 0.5rem 1rem;
@@ -67,7 +67,9 @@ header form button{
 }
 
 header form button:hover{
+    border-color: white;
     background-color: rgb(0, 71, 171);
+    color: aliceblue;
 }
 
 header ul{
@@ -176,6 +178,7 @@ span{
     padding: 2rem;
 }
 
+/*estilos caja*/
 
 .box{
     width: 20rem;
