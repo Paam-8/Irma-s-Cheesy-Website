@@ -10,15 +10,102 @@ body{
     padding: 0;
 }
 
+ul{
+    list-style: none;
+}
+
+/*estilos header*/
+
+header{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    padding: 1rem 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-image-container{
+    width: 8rem;
+    background-color: rgb(0, 71, 171);
+    border-radius: 100%;
+    border: 1.5px solid rgb(5, 88, 34);
+}
+
+.header-image-container img{
+    width: 100%;
+}
+
+header form{
+    width: 35%;
+}
+
+header form input{
+    width: 60%;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: 200ms;
+    border: 1px solid color rgb(0, 71, 171);
+    border-radius: 100vw 0 0 100vw;
+}
+
+header form input:focus{
+    border: 1px solid color rgb(0, 71, 171);
+    outline: none;
+}
+
+header form button{
+    border: 1px black;
+    background-color: rgb(123, 3, 35);
+    color: aliceblue;
+    border-radius: 0 100vw 100vw 0;
+    padding: 0.5rem 1rem;
+    transition: 200ms;
+    font-style: italic;
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+header form button:hover{
+    background-color: rgb(0, 71, 171);
+}
+
+header ul{
+    display: flex;
+    gap: 2rem;
+}
+
+header ul li{
+    transition: 200ms;
+    font-style: italic;
+}
+
+header ul li:hover{
+    transform: scale(1.1);
+}
+
+/*estilos tarjetas*/
+
+.cards-container{
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: rgb(0, 0, 0);
     color: aliceblue;
     width: 33rem;
+    height: 35rem;
     padding: 2rem 2rem;
-    margin: 2.8rem;
     border-radius: 10px;
     box-sizing: border-box;
-    display: inline-block;
 }
 
 .card-imgage-container{
@@ -27,11 +114,12 @@ body{
 
 .card-image-container img{
     width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
 
 .card-info{
-    margin: 1rem 0;
+    width: 100%;
 }
 
 .card-info h1{
@@ -45,6 +133,8 @@ body{
 
 
 .card button{
+    width: 6rem;
+    margin: 0.5rem;
     border: 1px solid white;
     background-color: black;
     color: white;
@@ -53,9 +143,8 @@ body{
     transition: 200ms;
     font-style: italic;
     font-weight: 500;
+    align-self: center;
 }
-
-
 
 .card button:hover{
     border: 1px solid rgba(245, 222, 179, 0);
@@ -67,21 +156,41 @@ body{
 h3{
     text-align: center;
     margin: 10px;
-    
+    color: aliceblue;
 }
 
-h3{
+#thnks{
+    text-align: center;
+    margin: 10px;
     color: aliceblue;
-    padding-top: 1rem;
+    padding-bottom: 0.75rem;
 }
 
 a{
-    color: rgb(5, 88, 34);
-    color: rgb(13, 172, 69);
+    color: rgb(5, 120, 50);
     text-decoration: none;
 }
 
 span{
     text-align: center;
     padding: 2rem;
+}
+
+
+.box{
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem;
+    background-color: aquamarine;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box p{
+    background-color: blueviolet;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
